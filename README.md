@@ -31,6 +31,10 @@ Each [release](https://github.com/Krathos-systems/aegis-cli/releases) carries:
 
 This repository holds release binaries only; the source is not published.
 
+## Verifying a release
+
+`SHA256SUMS` is signed with the Krathos Systems release key, and the signature is published as `SHA256SUMS.sig`. The installers check it when `ssh-keygen` from OpenSSH 8.1 or newer is available, and otherwise rely on the checksums alone. The [install guide](https://krathos.systems/docs/user-guide/cli/install/#verifying-a-release) shows how to check a release yourself and lists the key.
+
 ## Security
 
 Report a vulnerability as described in our [disclosure policy](https://krathos.systems/legal/vulnerability-disclosure).
